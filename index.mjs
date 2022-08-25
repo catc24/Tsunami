@@ -26,7 +26,7 @@ const bare = new Server('/bare/', '');
 const proxy = new Corrosion({
     prefix: "/corrosion/",
     codec: "xor",
-    title: "Tsunami",
+    title: "Andyum",
     forceHttps: true,
     requestMiddleware: [
         Corrosion.middleware.blacklist([
@@ -42,7 +42,7 @@ const Rhodium = new RhodiumProxy({
   prefix: "/rhodium/",
   server: app,
   Corrosion: [true, proxy],
-  title: "Tsunami"
+  title: "andyum"
 })
 
 Rhodium.init();
@@ -101,5 +101,5 @@ app.use(function (req, res) {
 })
 
 app.listen(port, () => {
-  console.log(`Tsunami is running at localhost:${port}`)
+  console.log(`Andyum is running at localhost:${port}`)
 })
