@@ -93,7 +93,7 @@
   
   <div theme="default" class="tabtheme tabbutton" onclick="setapp('default')">Default</div>
   
-  <div theme="dark" class="tabtheme tabbutton" onclick="setapp('dark')">Dark</div>
+  <div theme="dark" class="tabtheme tabbutton" onclick="setapp('dark')" [checked]="(idx === 0)">Dark</div>
   
   <div theme="light" class="tabtheme tabbutton" onclick="setapp('light')">Light</div>
   
@@ -127,11 +127,11 @@
   
   <div class="tabbuttons">
 
-  <div mode="about" class="tabmode tabbutton" onclick="setmode('about')">About:Blank(NOTE: this is the only one that works!)</div>
+  <div mode="about" class="tabmode tabbutton" onclick="setmode('about')">About:Blank(NOTE: this is the only one that works!)<" [checked]="(idx === 0)"</div>
 
   </div>
 
-  <div class="tabtitle">Go</div>
+  <div class="tabtitle">Go</div> 
   
   <div class="tabbuttons">
   
